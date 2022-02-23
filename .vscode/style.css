@@ -11,6 +11,7 @@ html, body {
   text-align: right;
   position: relative;
 }
+
 .logo {
     position: absolute;
     top: 0;
@@ -31,7 +32,7 @@ html, body {
   color: #0f0f0f;
   font-weight: 800;
   font-size: 24px;
-}  
+}
 
 .bar {
     width: 100%;
@@ -43,19 +44,28 @@ html, body {
     opacity: 0;
     transition: all 300ms;
 }
+  
+.bar:hover {
+      opacity: 1;
+      bottom: 5px;
+}
 
-
-  /* Split the screen in half */
+/* Split the screen in half */
 .split {
     height: 100%;
     width: 50%;
     position: fixed;
-    z-index: 1;
+    z-index: -1;
     top: 0;
     overflow-x: hidden;
     padding-top: 20px;
   }
   
+  bar {
+    opacity: 1;
+    bottom: 5px;
+  }
+
   /* Control the left side */
   .left {
     left: 0;
@@ -77,8 +87,8 @@ html, body {
   
   /* Style the image inside the centered container, if needed */
   .centered img {
-    height: 500px;
-    width: 500px;
+    height: 900px;
+    width: 900px;
     object-fit: contain;
   }
 
