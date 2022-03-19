@@ -39,6 +39,7 @@ html, body {
     display: inline-block;
     border-bottom: 5px solid black;
     position: absolute;
+    top: 0;
     bottom: 0;
     left: 0;
     opacity: 0;
